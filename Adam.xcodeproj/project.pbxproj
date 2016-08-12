@@ -13,8 +13,20 @@
 		03F7CA921D5E66FF00E1E282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F7CA901D5E66FF00E1E282 /* LaunchScreen.storyboard */; };
 		03F7CA9C1D5E68C700E1E282 /* RealmObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F7CA9B1D5E68C700E1E282 /* RealmObserver.swift */; };
 		03F7CA9E1D5E690500E1E282 /* RxRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F7CA9D1D5E690500E1E282 /* RxRealm.swift */; };
+		03F7CAA61D5E6B1B00E1E282 /* AdamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F7CAA51D5E6B1B00E1E282 /* AdamTests.swift */; };
 		AC53FA674E44F63DD56075B2 /* Pods_Adam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C9991A84D1DB6D557DBD37 /* Pods_Adam.framework */; };
+		CCB4D6EE34F8DE445CA178BD /* Pods_AdamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4316C58CD653315D77D05E /* Pods_AdamTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03F7CAA81D5E6B1B00E1E282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F7CA7C1D5E66FF00E1E282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F7CA831D5E66FF00E1E282;
+			remoteInfo = Adam;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03F7CA841D5E66FF00E1E282 /* Adam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adam.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,8 +37,14 @@
 		03F7CA931D5E66FF00E1E282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F7CA9B1D5E68C700E1E282 /* RealmObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmObserver.swift; sourceTree = "<group>"; };
 		03F7CA9D1D5E690500E1E282 /* RxRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRealm.swift; sourceTree = "<group>"; };
+		03F7CAA31D5E6B1B00E1E282 /* AdamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F7CAA51D5E6B1B00E1E282 /* AdamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdamTests.swift; sourceTree = "<group>"; };
+		03F7CAA71D5E6B1B00E1E282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06300536BE1A7BFBB61FA562 /* Pods-AdamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdamTests/Pods-AdamTests.release.xcconfig"; sourceTree = "<group>"; };
 		18C810C8CA4933702964FD4D /* Pods-Adam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Adam/Pods-Adam.release.xcconfig"; sourceTree = "<group>"; };
 		42F84D59D134A3330DB3C5FA /* Pods-Adam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Adam/Pods-Adam.debug.xcconfig"; sourceTree = "<group>"; };
+		4D4316C58CD653315D77D05E /* Pods_AdamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60FB85B5D81062F3DB023B4A /* Pods-AdamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdamTests/Pods-AdamTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9C9991A84D1DB6D557DBD37 /* Pods_Adam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -39,6 +57,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03F7CAA01D5E6B1B00E1E282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB4D6EE34F8DE445CA178BD /* Pods_AdamTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				03F7CA861D5E66FF00E1E282 /* Adam */,
+				03F7CAA41D5E6B1B00E1E282 /* AdamTests */,
 				03F7CA851D5E66FF00E1E282 /* Products */,
 				E33B064B85C0626576A9313B /* Pods */,
 				F16B83803A7271E58A2786AB /* Frameworks */,
@@ -56,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				03F7CA841D5E66FF00E1E282 /* Adam.app */,
+				03F7CAA31D5E6B1B00E1E282 /* AdamTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,11 +118,22 @@
 			name = Vendor;
 			sourceTree = "<group>";
 		};
+		03F7CAA41D5E6B1B00E1E282 /* AdamTests */ = {
+			isa = PBXGroup;
+			children = (
+				03F7CAA51D5E6B1B00E1E282 /* AdamTests.swift */,
+				03F7CAA71D5E6B1B00E1E282 /* Info.plist */,
+			);
+			path = AdamTests;
+			sourceTree = "<group>";
+		};
 		E33B064B85C0626576A9313B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				42F84D59D134A3330DB3C5FA /* Pods-Adam.debug.xcconfig */,
 				18C810C8CA4933702964FD4D /* Pods-Adam.release.xcconfig */,
+				60FB85B5D81062F3DB023B4A /* Pods-AdamTests.debug.xcconfig */,
+				06300536BE1A7BFBB61FA562 /* Pods-AdamTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -103,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				B9C9991A84D1DB6D557DBD37 /* Pods_Adam.framework */,
+				4D4316C58CD653315D77D05E /* Pods_AdamTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +170,27 @@
 			productReference = 03F7CA841D5E66FF00E1E282 /* Adam.app */;
 			productType = "com.apple.product-type.application";
 		};
+		03F7CAA21D5E6B1B00E1E282 /* AdamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F7CAAA1D5E6B1B00E1E282 /* Build configuration list for PBXNativeTarget "AdamTests" */;
+			buildPhases = (
+				76EF99A403DBDF2A0376C8C4 /* [CP] Check Pods Manifest.lock */,
+				03F7CA9F1D5E6B1B00E1E282 /* Sources */,
+				03F7CAA01D5E6B1B00E1E282 /* Frameworks */,
+				03F7CAA11D5E6B1B00E1E282 /* Resources */,
+				5F809303B39EB8F8B9237325 /* [CP] Embed Pods Frameworks */,
+				DA8A384D79D4112B4A02B4B2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03F7CAA91D5E6B1B00E1E282 /* PBXTargetDependency */,
+			);
+			name = AdamTests;
+			productName = AdamTests;
+			productReference = 03F7CAA31D5E6B1B00E1E282 /* AdamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,6 +205,12 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2V5KTH95VW;
 						ProvisioningStyle = Automatic;
+					};
+					03F7CAA21D5E6B1B00E1E282 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2V5KTH95VW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03F7CA831D5E66FF00E1E282;
 					};
 				};
 			};
@@ -161,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				03F7CA831D5E66FF00E1E282 /* Adam */,
+				03F7CAA21D5E6B1B00E1E282 /* AdamTests */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +240,13 @@
 			files = (
 				03F7CA921D5E66FF00E1E282 /* LaunchScreen.storyboard in Resources */,
 				03F7CA8F1D5E66FF00E1E282 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F7CAA11D5E6B1B00E1E282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +266,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adam/Pods-Adam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F809303B39EB8F8B9237325 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdamTests/Pods-AdamTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76EF99A403DBDF2A0376C8C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A541A23D06FB3696E3EDC187 /* [CP] Check Pods Manifest.lock */ = {
@@ -223,6 +328,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adam/Pods-Adam-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DA8A384D79D4112B4A02B4B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdamTests/Pods-AdamTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -237,7 +357,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03F7CA9F1D5E6B1B00E1E282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F7CAA61D5E6B1B00E1E282 /* AdamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03F7CAA91D5E6B1B00E1E282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03F7CA831D5E66FF00E1E282 /* Adam */;
+			targetProxy = 03F7CAA81D5E6B1B00E1E282 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		03F7CA901D5E66FF00E1E282 /* LaunchScreen.storyboard */ = {
@@ -370,6 +506,36 @@
 			};
 			name = Release;
 		};
+		03F7CAAB1D5E6B1B00E1E282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60FB85B5D81062F3DB023B4A /* Pods-AdamTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2V5KTH95VW;
+				INFOPLIST_FILE = AdamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sizeof.AdamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adam.app/Adam";
+			};
+			name = Debug;
+		};
+		03F7CAAC1D5E6B1B00E1E282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06300536BE1A7BFBB61FA562 /* Pods-AdamTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2V5KTH95VW;
+				INFOPLIST_FILE = AdamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sizeof.AdamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adam.app/Adam";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -387,6 +553,15 @@
 			buildConfigurations = (
 				03F7CA971D5E66FF00E1E282 /* Debug */,
 				03F7CA981D5E66FF00E1E282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F7CAAA1D5E6B1B00E1E282 /* Build configuration list for PBXNativeTarget "AdamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F7CAAB1D5E6B1B00E1E282 /* Debug */,
+				03F7CAAC1D5E6B1B00E1E282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,6 @@
+framework module Pods_AdamTests {
+  umbrella header "Pods-AdamTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

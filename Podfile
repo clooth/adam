@@ -10,5 +10,10 @@ target 'Adam' do
   pod 'RxSwift', git: 'https://github.com/ReactiveX/RxSwift', branch: 'swift-3.0', submodules: true
   pod 'RxCocoa', git: 'https://github.com/ReactiveX/RxSwift', branch: 'swift-3.0', submodules: true
   pod 'RxBlocking', git: 'https://github.com/ReactiveX/RxSwift', branch: 'swift-3.0', submodules: true
+end
+
+target 'AdamTests' do
+  use_frameworks!
+
   pod 'RxTests', git: 'https://github.com/ReactiveX/RxSwift', branch: 'swift-3.0', submodules: true
 end
