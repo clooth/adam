@@ -9,4 +9,4 @@ machine:
 
 test:
   override:
-    - eval `ssh-agent` && ssh-add /home/ubuntu/.ssh/id_circleci_github && cargo test
+    - cargo test
