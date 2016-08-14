@@ -1,0 +1,6 @@
+[package]
+name = "Adam"
+version = "0.1.0"
+authors = ["Nico Hämäläinen <nico@sizeof.io>"]
+
+[dependencies]
