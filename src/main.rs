@@ -1,3 +1,7 @@
+extern crate sdl2;
+
+mod adam;
+
 fn main() {
-    println!("Hello, world!");
+    println!("Hey, it's Adam.");
 }
