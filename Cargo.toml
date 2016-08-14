@@ -1,5 +1,5 @@
 [package]
-name = "Adam"
+name = "adam"
 version = "0.1.0"
 authors = ["Nico Hämäläinen <nico@sizeof.io>"]
 
