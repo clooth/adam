@@ -1,0 +1,12 @@
+machine:
+  pre:
+    - curl -sS https://static.rust-lang.org/rustup.sh > rustup.sh
+    - chmod +x ./rustup.sh
+    - ./rustup.sh --yes
+    - sudo add-apt-repository ppa:zoogie/sdl2-snapshots
+    - sudo apt-get update
+    - sudo apt-get install libsdl2-dev
+
+test:
+  override:
+    - eval `ssh-agent` && ssh-add /home/ubuntu/.ssh/id_circleci_github && cargo test
