@@ -9,4 +9,6 @@ machine:
 
 test:
   override:
-    - eval `ssh-agent` && ssh-add /home/ubuntu/.ssh/id_circleci_github && cargo test --verbose
+    - rm -f ~/.gitconfig
+    - cargo build --verbose
+    - cargo test --verbose
