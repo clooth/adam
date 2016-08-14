@@ -3,9 +3,9 @@ machine:
     - curl -sS https://static.rust-lang.org/rustup.sh > rustup.sh
     - chmod +x ./rustup.sh
     - ./rustup.sh --yes --channel=nightly
-    - sudo add-apt-repository ppa:zoogie/sdl2-snapshots
-    - sudo apt-get update
-    - sudo apt-get install libsdl2-dev
+    - sudo add-apt-repository ppa:zoogie/sdl2-snapshots -y
+    - sudo apt-get update -y
+    - sudo apt-get install libsdl2-dev -y
 
 test:
   override:
