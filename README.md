@@ -15,8 +15,8 @@ This crate provides a framework for building simple 2D games using `SDL2`, `SDL2
 ## Building
 
 ```
-- git clone https://github.com/clooth/adam.git
-- cd adam && cargo build --verbose
+$ git clone https://github.com/clooth/adam.git
+$ cd adam && cargo build --verbose
 ```
 
 ## Running tests
@@ -31,7 +31,7 @@ $ cd adam && cargo test --verbose
 There are some examples in the `examples/` directory that you can run via:
 
 ```
-- cargo run --example <example_name>
+$ cargo run --example <example_name>
 ```
 
 ## Integration
