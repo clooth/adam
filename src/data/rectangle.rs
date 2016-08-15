@@ -1,5 +1,7 @@
+//! A module with SDL-compatible rectangle functionality.
 use sdl2::rect::Rect as SdlRect;
 
+#[allow(missing_docs)]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct Rectangle {
     pub x: f64,
@@ -93,6 +95,7 @@ impl Rectangle {
 #[cfg(test)]
 mod tests {
     use sdl2::rect::Rect as SdlRect;
+    use float_cmp::ApproxEqUlps;
     use super::Rectangle;
 
     #[test]
@@ -106,8 +109,8 @@ mod tests {
 
         assert!(rect.x == 0.0);
         assert!(rect.y == 0.0);
-        assert!(rect.w == 10.0);
-        assert!(rect.h == 10.0);
+        assert!(rect.w.approx_eq_ulps(&10.0f64, 2));
+        assert!(rect.h.approx_eq_ulps(&10.0f64, 2));
     }
 
     #[test]
@@ -131,18 +134,18 @@ mod tests {
 
         assert!(rect.x == 0.0);
         assert!(rect.y == 0.0);
-        assert!(rect.w == 100.0);
-        assert!(rect.h == 50.0);
+        assert!(rect.w.approx_eq_ulps(&100.0f64, 2));
+        assert!(rect.h.approx_eq_ulps(&50.0f64, 2));
     }
 
     #[test]
     fn test_centered_at() {
         let rect = Rectangle::with_size(100.0, 100.0).centered_at((200.0, 200.0));
 
-        assert!(rect.x == 150.0);
-        assert!(rect.y == 150.0);
-        assert!(rect.w == 100.0);
-        assert!(rect.h == 100.0);
+        assert!(rect.x.approx_eq_ulps(&150.0f64, 2));
+        assert!(rect.y.approx_eq_ulps(&150.0f64, 2));
+        assert!(rect.w.approx_eq_ulps(&100.0f64, 2));
+        assert!(rect.h.approx_eq_ulps(&100.0f64, 2));
     }
 
     #[test]
@@ -160,8 +163,8 @@ mod tests {
         let inside_rect = Rectangle::with_size(50.0, 50.0).centered_at((50.0, 50.0));
         let outside_rect = Rectangle::with_size(50.0, 50.0).centered_at((100.0, 100.0));
 
-        assert!(parent.contains(inside_rect) == true);
-        assert!(parent.contains(outside_rect) == false);
+        assert!(parent.contains(inside_rect));
+        assert!(!parent.contains(outside_rect));
     }
 
     #[test]
@@ -170,8 +173,8 @@ mod tests {
         let inside_rect = Rectangle::with_size(50.0, 50.0).centered_at((50.0, 50.0));
         let outside_rect = Rectangle::with_size(50.0, 50.0).centered_at((300.0, 300.0));
 
-        assert!(inside_rect.overlaps(parent) == true);
-        assert!(outside_rect.overlaps(parent) == false);
+        assert!(inside_rect.overlaps(parent));
+        assert!(!outside_rect.overlaps(parent));
     }
 
     #[test]
@@ -195,7 +198,7 @@ mod tests {
 
         assert!(negative_moved_rect.x == 0.0);
         assert!(negative_moved_rect.y == 0.0);
-        assert!(positive_moved_rect.x == 50.0);
-        assert!(positive_moved_rect.y == 50.0);
+        assert!(positive_moved_rect.x.approx_eq_ulps(&50.0f64, 2));
+        assert!(positive_moved_rect.y.approx_eq_ulps(&50.0f64, 2));
     }
 }
