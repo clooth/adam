@@ -2,7 +2,7 @@
 
 [![Clippy Linting Result](https://clippy.bashy.io/github/clooth/adam/master/badge.svg)](https://clippy.bashy.io/github/clooth/adam/master/log)
 
-Main protagonist in the story of game development.
+This crate provides a framework for building simple 2D games using `SDL2`, `SDL2_image`, `SDL_mixer` and `SDL_ttf` behind the scenes.
 
 ## Feature Roadmap
 
