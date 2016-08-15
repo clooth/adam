@@ -1,19 +1,22 @@
 extern crate adam;
 
-use adam::data::Rectangle;
+use adam::data::geometry::{Rectangle, Point, Size};
 
 fn main() {
     // Simple initialization
     let rect = Rectangle {
         x: 0.0,
         y: 0.0,
-        w: 200.0,
-        h: 100.0,
+        width: 200.0,
+        height: 100.0,
     };
 
     // Some utility methods
     let center = rect.center();
-    let centered = rect.centered_at((500.0, 500.0));
+    let centered = rect.centered_at(Point {
+        x: 500.0,
+        y: 500.0,
+    });
     let sdl_rect = centered.to_sdl();
 
     println!("Simple rectangle: {:?}", rect);
@@ -22,6 +25,9 @@ fn main() {
     println!("SDL instance of that rectangle: {:?}", sdl_rect);
 
     // Shortcuts
-    let square = Rectangle::with_size(100.0, 100.0);
+    let square = Rectangle::with_size(Size {
+        width: 100.0,
+        height: 100.0,
+    });
     println!("Square rectangle: {:?}", square);
 }
