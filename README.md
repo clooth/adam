@@ -4,11 +4,49 @@
 
 Main protagonist in the story of game development.
 
-## TODO
+## Feature Roadmap
 
+- [ ] Renderer Management
+- [ ] Generic Timer
 - [ ] Sprites
+- [ ] Input (Keyboard, Mouse)
 - [ ] Sounds and Music
-- [ ] Timer
-- [ ] Input
 
 ## Building
+
+```
+- git clone https://github.com/clooth/adam.git
+- cd adam && cargo build --verbose
+```
+
+## Running tests
+
+```
+$ git clone https://github.com/clooth/adam.git
+$ cd adam && cargo test --verbose
+```
+
+## Running examples
+
+There are some examples in the `examples/` directory that you can run via:
+
+```
+- cargo run --example <example_name>
+```
+
+## Integration
+
+```
+[dependencies]
+adam = "*"
+```
+
+```
+$ cargo build
+```
+
+```
+extern crate adam;
+
+use adam::data::Rectangle;
+```
