@@ -1,7 +1,23 @@
 [package]
 name = "adam"
 version = "0.1.0"
-authors = ["Nico Hämäläinen <nico@sizeof.io>"]
+license = "MIT"
+description = "Simple 2D game engine written in Rust."
+authors = [
+  "Nico Hämäläinen <nico@sizeof.io>"
+]
+readme = "README.md"
+documentation = "https://github.com/clooth/adam/wiki"
+homepage = "https://github.com/clooth/adam"
+exclude = [
+  "examples/*",
+]
+
+[lib]
+name = "adam"
+path = "./src/lib.rs"
 
 [dependencies]
 sdl2 = "0.22"
+clippy = "*"
+float-cmp = "*"
